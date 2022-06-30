@@ -209,11 +209,11 @@ img {
 }
 
 .panel__button-add.collapsed {
-  background-image: url('../icons/icon-plus.svg');
+  background-image: url('../../icons/icon-plus.svg');
 }
 
 .panel__button-add {
-  background-image: url('../icons/icon-minus.svg');
+  background-image: url('../../icons/icon-minus.svg');
 }
 
 .panel__button-remove {
@@ -335,7 +335,7 @@ img {
   height: 62px;
   padding: 17px;
 
-  background-image: url('../img/camera-background.png');
+  background-image: url('../../img/camera-background.png');
   @extend %base-img-property;
   background-size: contain;
   background-color: $box-hover-bg-color;
@@ -458,7 +458,7 @@ img {
   width: 18px;
   height: 18px;
 
-  background-image: url('../icons/icon-error.png');
+  background-image: url('../../icons/icon-error.png');
 }
 
 .document-tips__success_border,
@@ -481,7 +481,7 @@ img {
   width: 30px;
   height: 30px;
 
-  background-image: url('../icons/icon-success-tips.png');
+  background-image: url('../../icons/icon-success-tips.png');
 }
 
 .document-tips__title {
@@ -605,7 +605,7 @@ img {
   &::before {
     background-color: #60ffb9;
     border: 2px solid $white-color;
-    background-image: url('../icons/green-arrow-success.png');
+    background-image: url('../../icons/green-arrow-success.png');
     transform: scale(1.1);
     @extend %base-img-property;
   }

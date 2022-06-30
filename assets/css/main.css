@@ -165,11 +165,11 @@ img {
 }
 
 .panel__button-add.collapsed {
-  background-image: url("../icons/icon-plus.svg");
+  background-image: url("../../icons/icon-plus.svg");
 }
 
 .panel__button-add {
-  background-image: url("../icons/icon-minus.svg");
+  background-image: url("../../icons/icon-minus.svg");
 }
 
 .panel__button-remove {
@@ -311,7 +311,7 @@ img {
   width: 62px;
   height: 62px;
   padding: 17px;
-  background-image: url("../img/camera-background.png");
+  background-image: url("../../img/camera-background.png");
   background-size: contain;
   background-color: #f5f9ff;
   border: none;
@@ -452,7 +452,7 @@ img {
 .document-tips__error-x::before {
   width: 18px;
   height: 18px;
-  background-image: url("../icons/icon-error.png");
+  background-image: url("../../icons/icon-error.png");
 }
 
 .document-tips__success_border,
@@ -473,7 +473,7 @@ img {
   left: -10px;
   width: 30px;
   height: 30px;
-  background-image: url("../icons/icon-success-tips.png");
+  background-image: url("../../icons/icon-success-tips.png");
 }
 
 .document-tips__title {
@@ -611,7 +611,7 @@ img {
 .document-type__checkbox:checked + .document-type__name::before {
   background-color: #60ffb9;
   border: 2px solid #fff;
-  background-image: url("../icons/green-arrow-success.png");
+  background-image: url("../../icons/green-arrow-success.png");
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
