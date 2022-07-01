@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
     <title>Documents Page</title>
 </head>
 
@@ -93,70 +93,76 @@
 
                             <div class="row">
                                 <div class="col-lg-2 col-md-2">
-                                    <form class="document-container">
-                                        <label class="document-type" for="document-type__driving-license">                                     
-                                                <input id="document-type__driving-license"
-                                                    class="document-type__checkbox sr-only" checked name="documentFirstPage"
-                                                    type="radio" />
+                                    <form class="document-container driving-license__container_sm">
 
-                                                <span class="document-type__name">Deliver`s License</span>
+                                        <label class="document-type" data-filter=".category-1"
+                                            for="document-type__driving-license">
+                                            <input id="document-type__driving-license"
+                                                class="document-type__checkbox sr-only" checked name="documentFirstPage"
+                                                type="radio" />
 
-                                                <svg class="icon-checkbox" width="39" height="36" viewBox="0 0 39 36">
-                                                    <use href="./icons/sprite.svg#icon-driving-license"></use>
-                                                </svg>
+                                            <span class="document-type__name">Deliver`s License</span>
+
+                                            <svg class="icon-checkbox" width="39" height="36" viewBox="0 0 39 36">
+                                                <use href="./icons/sprite.svg#icon-driving-license"></use>
+                                            </svg>
                                         </label>
 
 
-                                        <label class="document-type" for="document-type__card-id">
+                                        <label class="document-type" data-filter=".category-2"
+                                            for="document-type__card-id">
                                             <input id="document-type__card-id" class="document-type__checkbox sr-only"
                                                 name="documentFirstPage" type="radio" />
-                                                
-                                                
-                                                <span class="document-type__name"> National ID Card</span>
-                                            
-                                                <svg class="icon-checkbox" width="49" height="37">
-                                                    <use href="./icons/sprite.svg#icon-id-card"></use>
-                                                </svg>
 
-                                       
+
+                                            <span class="document-type__name"> National ID Card</span>
+
+                                            <svg class="icon-checkbox" width="49" height="37">
+                                                <use href="./icons/sprite.svg#icon-id-card"></use>
+                                            </svg>
+
+
                                         </label>
 
 
-                                        <label class="document-type" for="document-type__passport">
+                                        <label class="document-type" data-filter=".category-3"
+                                            for="document-type__passport">
                                             <input id="document-type__passport" class="document-type__checkbox  sr-only"
                                                 name="documentFirstPage" type="radio" />
 
-                                                <span class="document-type__name"> Passport</span>
-                                                                                    
-                                                     <svg class="icon-checkbox" width="37" height="43">
-                                                         <use href="./icons/sprite.svg#icon-passport"></use>
-                                                     </svg>
+                                            <span class="document-type__name"> Passport</span>
+
+                                            <svg class="icon-checkbox" width="37" height="43">
+                                                <use href="./icons/sprite.svg#icon-passport"></use>
+                                            </svg>
                                         </label>
 
 
-                                        <label class="document-type" for="document-type__permanent-resident">
-                                            
+                                        <label class="document-type" data-filter=".category-4"
+                                            for="document-type__permanent-resident">
+
                                             <input id="document-type__permanent-resident"
                                                 class="document-type__checkbox  sr-only" name="documentFirstPage"
                                                 type="radio" />
-                                                
-                                                
-                                                 <span class="document-type__name">Permanent resident or alien registration</span>
-                                                                                    
-                                            
-                                                         <svg class="icon-checkbox" width="47" height="31">
-                                                             <use href="./icons/sprite.svg#icon-permament"></use>
-                                                         </svg>
-                                        </label>
 
+
+                                            <span class="document-type__name">Permanent resident or alien
+                                                registration</span>
+
+
+                                            <svg class="icon-checkbox" width="47" height="31">
+                                                <use href="./icons/sprite.svg#icon-permament"></use>
+                                            </svg>
+                                        </label>
                                     </form>
                                 </div>
 
                                 <div class="col-lg-5 col-md-7 border-right">
+                                    <div
+                                        class="upload-document upload-document__container upload-document__driving-license_grid">
 
-                                    <div class="upload-document upload-document__driving-license_grid">
-                                        <div class="upload-document__front-side upload-document__front-side_center">
-                                            <header class="upload-document__header text-center mb-3">
+                                        <div class="upload-document__wrapper-front-side">
+                                            <header class="upload-document__header text-center">
                                                 <p class="upload-document__title mb-1 text-center">
                                                     Please Upload Front side document
                                                 </p>
@@ -165,12 +171,55 @@
                                                 </p>
                                             </header>
 
-                                            <div class="upload-document__img-wrapper pink-shadow mb-5">
-                                           <picture>
-                                                    <source srcset="./img/driving-license-front-side.webp" />
-                                                    <img class="img-fluid" src="./img/driving-license-front-side.png"
-                                                        alt="document example driving license" width="438" height="272" />
-                                           </picture>
+                                            <div class="upload-document__front-side upload-document__front-side_center">
+                                                <div
+                                                    class="upload-document__img-wrapper  mix category-1 pink-shadow">
+                                                    <picture>
+                                                        <source srcset="./img/driving-license-front-side.webp" />
+                                                        <img class="img-fluid" src="./img/driving-license-front-side.png"
+                                                            alt="document example driving license" width="438"
+                                                            height="272" />
+                                                    </picture>
+                                                </div>
+
+                                                <div
+                                                    class="upload-document__img-wrapper mix category-2 blue-shadow">
+
+
+                                                 <picture> 
+                                                    <source srcset="./img/id-card-front.webp">
+                                                        <img class="img-fluid" src="./img/id-card-front.png"
+                                                            alt="document example driving license" width="438"
+                                                            height="272" />
+
+                                                 </picture>    
+                                                </div>
+
+                                                <div
+                                                    class="upload-document__img-wrapper mix category-3 passport-shadow">
+
+
+                                               <picture> 
+                                                 <source srcset="./img/passport-front-side.webp">
+                                                        <img class="img-responsive" src="./img/passport-front-side.png"
+                                                            alt="document example driving license" width="438"
+                                                            height="272" />
+                                               </picture>
+
+                                                </div>
+
+                                                <div
+                                                    class="upload-document__img-wrapper mix category-4 green-shadow">
+
+                                                  <picture >
+                                                    <source srcset="./img/permanent-resident-front.webp">
+                                                        <img class="img-responsive" src="./img/permanent-resident-front.png"
+                                                            alt="document example driving license" width="438"
+                                                            height="272" />
+                                                  </picture>
+
+                                                </div>
+
                                             </div>
 
                                             <div class="upload-document-button-container">
@@ -196,8 +245,10 @@
                                             </div>
                                         </div>
 
-                                        <div class="upload-document__back-side upload-document__back-side_center">
-                                            <header class="upload-document__header text-center mb-3">
+
+                                        <div class="upload-document__wrapper-back-side">
+
+                                            <header class="upload-document__header text-center">
                                                 <p class="upload-document__title  mb-1  text-center">
                                                     Please Upload Front side document
                                                 </p>
@@ -206,19 +257,59 @@
                                                 </p>
                                             </header>
 
-                                            <div class="upload-document__img-wrapper pink-shadow mb-5">
-                                         <picture>
-                                                    <source srcset="./img/driving-license-back-side.webp" />
-                                                    <img class="img-fluid" src="./img/driving-license-back-side.png"
-                                                        alt="document example driving license" width="438" height="272" />
-                                         </picture>
+                                            <div class="upload-document__back-side upload-document__back-side_center">
+
+                                                <div
+                                                    class="upload-document__img-wrapper mix category-1 pink-shadow">
+                                                    <picture>
+                                                        <source srcset="./img/driving-license-back-side.webp" />
+                                                        <img class="img-responsive"
+                                                            src="./img/driving-license-back-side.png"
+                                                            alt="document example driving license" width="438"
+                                                            height="272" />
+                                                    </picture>
+                                                </div>
+
+                                                <div
+                                                    class="upload-document__img-wrapper mix category-2 blue-shadow">
+                                                    <picture>
+                                                        <source srcset="./img/id-card-back.webp">
+                                                        <img class="img-responsive" src="./img/id-card-back.png"
+                                                            alt="document example driving license" width="438"
+                                                            height="272" />
+
+                                                    </picture>
+                                                </div>
+
+                                                <div
+                                                    class="upload-document__img-wrapper mix category-3 passport-shadow">
+                                                    <picture>
+                                                        <source srcset="./img/passport-back-side.webp">
+                                                        <img class="img-responsive" src="./img/passport-back-side.png"
+                                                            alt="document example driving license" width="438"
+                                                            width="438" height="272" />
+                                                    </picture>
+                                                </div>
+
+                                                <div
+                                                    class="upload-document__img-wrapper mix category-4 green-shadow">
+                                                    <picture>
+                                                        <source srcset="./img/permanent-resident-back.webp">
+                                                        <img class="img-responsive"
+                                                            src="./img/permanent-resident-back.png"
+                                                            alt="document example driving license" width="438"
+                                                            height="272" />
+                                                    </picture>
+
+                                                </div>
+
                                             </div>
 
                                             <div class="upload-document-button-container">
                                                 <button class="upload-document-button-container__icon-camera"
                                                     type="button">
                                                     <svg class="icon-camera" width="29" height="29">
-                                                        <use href="./icons/sprite.svg#icon-camera"></use>
+                                                        <use href="/icons/sprite.svg#icon-camera"></use>
                                                     </svg>
                                                 </button>
 
@@ -229,7 +320,7 @@
                                                         <span role="img" aria-label="icon-svg"
                                                             class="upload-document__icon-container">
                                                             <svg width="8" height="14">
-                                                                <use href="./icons/sprite.svg#icon-arrow-up"></use>
+                                                                <use href="/icons/sprite.svg#icon-arrow-up"></use>
                                                             </svg>
                                                         </span>
                                                     </label>
@@ -260,12 +351,12 @@
 
                                                 <div
                                                     class="document-tips__img-container document-tips__error-x document-tips__error_border">
-                                             <picture>
+                                                    <picture>
                                                         <source srcset="./img/driving-license-front-side-error.webp" />
                                                         <img class="img-responsive pink-shadow"
                                                             src="./img/driving-license-front-side-error.png"
                                                             alt="img with wrong screenshot" width="265" height="164" />
-                                             </picture>
+                                                    </picture>
                                                 </div>
                                             </li>
                                             <li class="document-tips__item">
@@ -278,12 +369,13 @@
 
                                                 <div
                                                     class="document-tips__img-container document-tips__error-x document-tips__error_border">
-                                               <picture>
-                                                        <source srcset="./img/driving-license-front-side-blur-error.webp" />
+                                                    <picture>
+                                                        <source
+                                                            srcset="./img/driving-license-front-side-blur-error.webp" />
                                                         <img class="img-responsive pink-shadow"
                                                             src="./img/driving-license-front-side-blur-error.png"
                                                             alt="img with wrong screenshot" width="265" height="164" />
-                                               </picture>
+                                                    </picture>
                                                 </div>
                                             </li>
                                             <li class="document-tips__item">
@@ -296,12 +388,12 @@
 
                                                 <div
                                                     class="document-tips__img-container document-tips__error-x document-tips__error_border">
-                                                <picture>
+                                                    <picture>
                                                         <source srcset="./img/driving-license-example-hand.webp" />
                                                         <img class="img-responsive document-tips__img_relative pink-shadow"
                                                             src="./img/driving-license-example-hand.png"
                                                             alt="img with wrong screenshot" width="200" height="200" />
-                                                </picture>
+                                                    </picture>
                                                 </div>
                                             </li>
                                             <li class="document-tips__item">
@@ -316,17 +408,17 @@
 
                                                 <div
                                                     class="document-tips__img-container document-tips__success-check document-tips__success_border">
-                                                 <picture>
+                                                    <picture>
                                                         <source srcset="./img/driving-license-front-side-success.webp" />
-                                                        <img class="img-fluid mb-2 pink-shadow"
+                                                        <img class="img-responsive mb-2 pink-shadow"
                                                             src="./img/driving-license-front-side-success.png"
                                                             alt="img with wrong screenshot" width="179" height="112" />
-    
-                                                        <source srcset="./img/driving-license-back-side-success.webp" />
-                                                        <img class="img-fluid pink-shadow"
+
+                                                        <source srcset="/img/driving-license-back-side-success.webp" />
+                                                        <img class="img-responsive pink-shadow"
                                                             src="./img/driving-license-back-side-success.png"
                                                             alt="img with wrong screenshot" width="179" height="112" />
-                                                 </picture>
+                                                    </picture>
                                                 </div>
                                             </li>
                                         </ul>
@@ -403,9 +495,9 @@
 
                                 <div class="row">
                                     <div class="col-lg-7 col-md-7 border-right">
-                                        <div class="upload-document upload-document_frame">
-                                            <div class="upload-document__front-side upload-document_border_bottom mb-5">
-                                                <div class="note note_size_md note_color_blue mb-5">
+                                        <div class="upload-document">
+                                            <div class="upload-document__front-side upload-document_border_bottom">
+                                                <div class="note note_size_md note_color_blue">
                                                     <span class="tooltip-info tooltip-info__dark-blue">
                                                         <svg class="tooltip-info_theme_white" width="7" height="14">
                                                             <use href="./icons/sprite.svg#icon-info"></use>
@@ -418,21 +510,21 @@
                                                     </p>
                                                 </div>
 
-                                                <form id="document-container-2" class="document-container mb-5">
+                                                <form id="document-container-2" class="document-container">
                                                     <label class="document-type document-type_full-width"
                                                         for="document-type__utility-bill">
-                                                       
-          
+
+
                                                         <input id="document-type__utility-bill"
                                                             class="document-type__checkbox sr-only"
                                                             name="documentSecondPage" type="radio" />
- 
-                                                        
+
+
                                                         <span class="document-type__name">Utility Bill</span>
-                                                            <svg class="icon-checkbox" width="39" height="36">
-                                                                <use href="./icons/sprite.svg#icon-utility-bill"></use>
-                                                            </svg>
-                                          
+                                                        <svg class="icon-checkbox" width="39" height="36">
+                                                            <use href="./icons/sprite.svg#icon-utility-bill"></use>
+                                                        </svg>
+
                                                     </label>
 
                                                     <label class="document-type document-type_full-width"
@@ -442,33 +534,33 @@
                                                             class="document-type__checkbox sr-only"
                                                             name="documentSecondPage" type="radio" />
 
-                                                                 <span class="document-type__name">Local Tax Bill</span>
-                                                  
-                                                            <svg class="icon-checkbox" width="49" height="37">
-                                                                <use href="./icons/sprite.svg#icon-local-tax"></use>
-                                                            </svg>
-                                                     
- 
+                                                        <span class="document-type__name">Local Tax Bill</span>
 
-                                                
+                                                        <svg class="icon-checkbox" width="49" height="37">
+                                                            <use href="./icons/sprite.svg#icon-local-tax"></use>
+                                                        </svg>
+
+
+
+
                                                     </label>
 
                                                     <label class="document-type document-type_full-width"
                                                         for="document-type__bank-statement">
-                                                      
+
                                                         <input id="document-type__bank-statement"
                                                             class="document-type__checkbox  sr-only"
                                                             name="documentSecondPage" checked type="radio" />
-                                                            
+
                                                         <span class="document-type__name">Bank statement</span>
 
-                                                            <svg class="icon-checkbox" width="37" height="43"
-                                                                viewBox="0 0 37 43">
-                                                                <use href="./icons/sprite.svg#icon-bank-statement"></use>
-                                                            </svg>
-                                                       
- 
- 
+                                                        <svg class="icon-checkbox" width="37" height="43"
+                                                            viewBox="0 0 37 43">
+                                                            <use href="./icons/sprite.svg#icon-bank-statement"></use>
+                                                        </svg>
+
+
+
                                                     </label>
                                                 </form>
 
@@ -499,7 +591,7 @@
                                             </div>
 
                                             <div class="upload-document__back-side ">
-                                                <div class=" note note_size_large note_color_blue mb-5">
+                                                <div class=" note note_size_large note_color_blue">
                                                     <span class="tooltip-info tooltip-info__dark-blue">
 
                                                         <svg class="tooltip-info_theme_white" width="7" height="14">
@@ -514,51 +606,51 @@
                                                     </p>
                                                 </div>
 
-                                                <form id="document-container-3" class="document-container mb-5">
+                                                <form id="document-container-3" class="document-container">
                                                     <label class="document-type document-type_full-width"
                                                         for="document-type__driving-license_2">
 
-                                                      <input id="document-type__driving-license_2"
+                                                        <input id="document-type__driving-license_2"
                                                             class="document-type__checkbox sr-only"
                                                             name="documentThirdPage" checked type="radio" />
 
-                                                         <span class="document-type__name">Deliver`s License</span>
-                                                    
-                                                            <svg class="icon-checkbox" width="39" height="36">
-                                                                <use href="./icons/sprite.svg#icon-driving-license">
-                                                                </use>
-                                                            </svg>
-        
+                                                        <span class="document-type__name">Deliver`s License</span>
+
+                                                        <svg class="icon-checkbox" width="39" height="36">
+                                                            <use href="./icons/sprite.svg#icon-driving-license">
+                                                            </use>
+                                                        </svg>
+
                                                     </label>
 
                                                     <label class="document-type document-type_full-width"
                                                         for="document-type__card-id_2">
 
-                                                        
+
                                                         <input id="document-type__card-id_2"
                                                             class="document-type__checkbox sr-only"
                                                             name="documentThirdPage" type="radio" />
-                                                        
+
                                                         <span class="document-type__name"> National ID Card</span>
-                                                        
-                                                            <svg class="icon-checkbox" width="49" height="37">
-                                                                <use href="./icons/sprite.svg#icon-id-card"></use>
-                                                            </svg>
-                                                     
- 
- 
+
+                                                        <svg class="icon-checkbox" width="49" height="37">
+                                                            <use href="./icons/sprite.svg#icon-id-card"></use>
+                                                        </svg>
+
+
+
                                                     </label>
 
                                                     <label class="document-type document-type_full-width"
                                                         for="document-type__passport_2">
-                                                          <input id="document-type__passport_2"
+                                                        <input id="document-type__passport_2"
                                                             class="document-type__checkbox  sr-only"
                                                             name="documentThirdPage" type="radio" />
-                                                       
-                                                          <span class="document-type__name"> Passport</span>
-                                                            <svg class="icon-checkbox" width="37" height="43">
-                                                                <use href="./icons/sprite.svg#icon-passport"></use>
-                                                            </svg>
+
+                                                        <span class="document-type__name"> Passport</span>
+                                                        <svg class="icon-checkbox" width="37" height="43">
+                                                            <use href="./icons/sprite.svg#icon-passport"></use>
+                                                        </svg>
 
                                                     </label>
                                                 </form>
@@ -632,7 +724,7 @@
                                                 </h3>
                                             </header>
 
-                                            <div class="note note_color_blue note_size_mid mb-5">
+                                            <div class="note note_wrapper-list-margin note_color_blue note_size_mid">
                                                 <span class="tooltip-info tooltip-info__dark-blue">
                                                     <svg class="tooltip-info_theme_white" width="7" height="14">
                                                         <use href="./icons/sprite.svg#icon-info"></use>
@@ -657,9 +749,10 @@
                                                         class="document-tips__img-container document-tips__img-container__paper document-tips__error-x document-tips__error_border">
                                                         <picture>
                                                             <source srcset="/img/paper-document-rotate.webp" />
-                                                            <img class=".img-responsive black-shadow"
+                                                            <img class="img-responsive black-shadow"
                                                                 src="./img/paper-document-rotate.png"
-                                                                alt="img with wrong screenshot" width="123" height="161" />
+                                                                alt="img with wrong screenshot" width="123"
+                                                                height="161" />
                                                         </picture>
                                                     </div>
                                                 </li>
@@ -674,12 +767,13 @@
 
                                                     <div
                                                         class="document-tips__img-container document-tips__img-container__paper document-tips__error-x document-tips__error_border">
-                                                    <picture>
-                                                            <source srcset="./img/paper-document-blur.webp" />
+                                                        <picture>
+                                                            <source srcset="/img/paper-document-blur.webp" />
                                                             <img class="img-responsive black-shadow"
                                                                 src="./img/paper-document-blur.png"
-                                                                alt="img with wrong screenshot" width="123" height="161" />
-                                                    </picture>
+                                                                alt="img with wrong screenshot" width="123"
+                                                                height="161" />
+                                                        </picture>
                                                     </div>
                                                 </li>
 
@@ -693,12 +787,13 @@
 
                                                     <div
                                                         class="document-tips__img-container document-tips__img-container__paper document-tips__error-x document-tips__error_border">
-                                                     <picture>
-                                                            <source srcset="./img/paper-document-cover.webp" />
+                                                        <picture>
+                                                            <source srcset="/img/paper-document-cover.webp" />
                                                             <img class="img-responsive"
                                                                 src="./img/paper-document-cover.png"
-                                                                alt="img with wrong screenshot" width="194" height="161" />
-                                                     </picture>
+                                                                alt="img with wrong screenshot" width="194"
+                                                                height="161" />
+                                                        </picture>
                                                     </div>
                                                 </li>
 
@@ -714,12 +809,13 @@
 
                                                     <div
                                                         class="document-tips__img-container document-tips__img-container__paper document-tips__success-check document-tips__success_border">
-                                               <picture>
-                                                            <source srcset="./img/paper-document-success.webp" />
+                                                        <picture>
+                                                            <source srcset="/img/paper-document-success.webp" />
                                                             <img class="img-fluid black-shadow"
                                                                 src="./img/paper-document-success.png"
-                                                                alt="img with wrong screenshot" width="121" height="163" />
-                                               </picture>
+                                                                alt="img with wrong screenshot" width="121"
+                                                                height="163" />
+                                                        </picture>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -801,10 +897,10 @@
                                 <div class="row">
                                     <div class="col-lg-7 col-md-7 border-right">
                                         <div
-                                            class="upload-document upload-document_bottom_border upload-document_frame mb-5">
-                                            <div class="upload-document__front-side upload-document_border_bottom mb-5">
+                                            class="upload-visa-card mb-5">
+                                            <div class="upload-visa-card__front-side">
 
-                                                <div class="note note_size_md note_color_blue mb-5">
+                                                <div class="note note_upload-visa-card_padding note_size_md note_color_blue">
                                                     <span class="tooltip-info tooltip-info__dark-blue">
                                                         <svg class="tooltip-info_theme_white" width="7" height="14">
                                                             <use href="./icons/sprite.svg#icon-info"></use>
@@ -819,7 +915,7 @@
                                                 <div class="upload-document_column_span">
 
                                                     <header
-                                                        class="upload-document__header upload-document__header_mt upload-document_size_md">
+                                                        class="upload-document__header  upload-visa-card__header upload-document_size_md">
                                                         <h2
                                                             class="upload-document__title upload-document_color_dark mb-2">
                                                             Front side&#58;</h2>
@@ -831,10 +927,10 @@
                                                         </p>
                                                     </header>
 
-                                                    <div class="upload-document__card-front-side">
+                                                    <div class="upload-visa-card__wrapper">
                                                         <picture>
-                                                            <source srcset="./img/card-front-side.webp">
-                                                            <img class="img-responsive visa-card-shadow mb-5"
+                                                            <source srcset="/img/card-front-side.webp">
+                                                            <img class="img-responsive upload-visa-card_margin visa-card-shadow"
                                                                 src="./img/card-front-side.png" alt="card visa front"
                                                                 width="400" height="250">
                                                         </picture>
@@ -873,9 +969,9 @@
                                             </div>
 
                                             <div
-                                                class="upload-document__back-side upload-document_column_span upload-document__back-side_pt">
+                                                  class="upload-visa-card__back-side upload-document_column_span">
 
-                                                <header class="upload-document__header upload-document_size_md">
+                                                <header class="upload-document__header upload-visa-card__header upload-document_size_md">
                                                     <h2
                                                         class="upload-document__title upload-document__header_mt upload-document_color_dark mb-2">
                                                         Back side&#58;</h2>
@@ -886,11 +982,12 @@
                                                     </p>
                                                 </header>
 
-                                                <div class="upload-document__card-back-side ">
-                                                    <picture >
+                                                <div class=" ">
+                                                    <picture>
                                                         <source srcset="./img/card-back-side.webp" sizes="400w">
-                                                        <img class="img-responsive visa-card-shadow mb-5" src="./img/card-back-side.png"
-                                                            alt="visa card" width="400" height="250">
+                                                        <img class="img-responsive upload-visa-card_margin visa-card-shadow"
+                                                            src="./img/card-back-side.png" alt="visa card" width="400"
+                                                            height="250">
                                                     </picture>
 
                                                     <div
@@ -962,7 +1059,7 @@
                                                     <div
                                                         class="document-tips__img-container document-tips__img-container__paper document-tips__error-x document-tips__error_border">
                                                         <picture>
-                                                            <source srcset="./img/card-rotate.webp" />
+                                                            <source srcset="/img/card-rotate.webp" />
                                                             <img class="img-responsive visa-card-shadow"
                                                                 src="./img/card-rotate.png"
                                                                 alt="img with wrong screenshot" width="123"
@@ -982,7 +1079,7 @@
                                                     <div
                                                         class="document-tips__img-container document-tips__img-container__paper document-tips__error-x document-tips__error_border">
                                                         <picture>
-                                                            <source srcset="./img/card-blur.webp" />
+                                                            <source srcset="/img/card-blur.webp" />
                                                             <img class="img-responsive visa-card-shadow"
                                                                 src="./img/card-blur.png" alt="img with wrong screenshot"
                                                                 width="123" height="161" />
@@ -1049,10 +1146,12 @@
 
 
 
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/mixitup.min.js"></script>
 
-    <script src="js/timer.js"></script>
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <script src="/js/timer.js"></script>
 
     <script>
         $(document).ready(function () {

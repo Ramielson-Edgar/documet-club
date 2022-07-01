@@ -218,13 +218,14 @@ img {
   max-width: 300px;
 }
 
+.upload-document__wrapper-front-side,
 .document-header_border-bottom,
 .upload-document_border_bottom {
   border-bottom: 1px solid #ededed;
 }
 
 .document-header {
-  padding: 0 0 45px;
+  padding: 45px 0 45px;
 }
 
 .upload-document_column_span {
@@ -233,10 +234,6 @@ img {
   -ms-grid-columns: (minmax(340px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 30px;
-}
-
-.upload-document__header_mt {
-  margin-top: 50px;
 }
 
 .upload-document__back-side_center,
@@ -258,19 +255,6 @@ img {
 
 .upload-document__back-side_center {
   border-bottom: none;
-  padding: 45px 0;
-}
-
-.upload-document__front-side_center {
-  padding: 0 0 70px 0;
-}
-
-.upload-document__front-side {
-  padding: 45px 0;
-}
-
-.upload-document_frame {
-  padding: 45px 45px 45px 0;
 }
 
 .upload-document-button-container {
@@ -330,10 +314,6 @@ img {
   fill: #4891ff;
 }
 
-.upload-document_bottom_border {
-  border-bottom: 1px solid #ededed;
-}
-
 .upload-document__title {
   font-weight: 700;
   color: #676767;
@@ -352,6 +332,27 @@ img {
   font-size: 16px;
 }
 
+.upload-document__wrapper-back-side,
+.upload-document__wrapper-front-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.upload-document__front-side {
+  padding: 0;
+}
+
 .pink-shadow {
   -webkit-filter: drop-shadow(20px 20px 35px rgba(96, 27, 115, 0.1));
           filter: drop-shadow(20px 20px 35px rgba(96, 27, 115, 0.1));
@@ -363,13 +364,13 @@ img {
 }
 
 .blue-shadow {
-  -webkit-box-shadow: 30px 30px 70px rgba(21, 114, 255, 0.2);
-          box-shadow: 30px 30px 70px rgba(21, 114, 255, 0.2);
+  -webkit-filter: drop-shadow(30px 30px 30px rgba(21, 114, 255, 0.1));
+          filter: drop-shadow(30px 30px 30px rgba(21, 114, 255, 0.1));
 }
 
 .green-shadow {
-  -webkit-box-shadow: 30px 30px 70px rgba(110, 242, 205, 0.2);
-          box-shadow: 30px 30px 70px rgba(110, 242, 205, 0.2);
+  -webkit-filter: drop-shadow(30px 30px 35px rgba(110, 242, 205, 0.1));
+          filter: drop-shadow(30px 30px 35px rgba(110, 242, 205, 0.1));
 }
 
 .visa-card-shadow {
@@ -377,8 +378,48 @@ img {
           filter: drop-shadow(30px 30px 34px rgba(101, 31, 255, 0.2));
 }
 
-.document-tips__wrapper {
+.passport-shadow {
+  -webkit-filter: drop-shadow(30px 30px 40px rgba(143, 124, 255, 0.1));
+          filter: drop-shadow(30px 30px 40px rgba(143, 124, 255, 0.1));
+}
+
+.upload-document__front-side,
+.upload-document__back-side,
+.document-container,
+.upload-document__wrapper-back-side,
+.upload-document__wrapper-front-side {
   padding: 45px 0;
+}
+
+.upload-visa-card__back-side,
+.upload-document__card-back-side,
+.upload-document__card-front-side {
+  padding: 45px 0 0;
+}
+
+.upload-visa-card {
+  padding: 45px 45px 45px 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.upload-visa-card__wrapper {
+  padding: 45px 0 45px;
+}
+
+.upload-visa-card__header {
+  margin-top: 70px;
+}
+
+.upload-visa-card_margin {
+  margin-bottom: 45px;
+}
+
+.document-tips__list {
+  padding: 45px 0;
+}
+
+.note_wrapper-list-margin {
+  margin-top: 45px;
 }
 
 .document-tips__list-paper,
@@ -819,14 +860,11 @@ img {
   padding: 0;
 }
 
+.upload-visa-card__back-side,
 .proof-residence__tips_border-top,
 .colour-copy,
 .proof-residence {
   border-top: 1px solid #ededed;
-}
-
-.colour-copy {
-  padding: 45px 0 0;
 }
 
 @media (max-width: 1198px) {
@@ -869,10 +907,6 @@ img {
     padding: 0;
     border-bottom: 1px solid #ededed;
   }
-  .upload-document__back-side,
-  .upload-document__front-side {
-    padding: 45px 0;
-  }
   .upload-document__front-side::after {
     bottom: 0px;
     right: -38px;
@@ -894,16 +928,20 @@ img {
   .upload-document__driving-license_grid {
     -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 70px;
+    gap: 42px;
   }
   .note_warning_red-bg {
     left: 330px;
   }
   .document-container {
     max-width: 750px;
+    margin-inline: auto;
   }
   .border-right {
     border: unset;
+  }
+  .upload-document__header {
+    margin-bottom: 0;
   }
 }
 
@@ -934,6 +972,28 @@ img {
   .note_warning_red-bg {
     left: 290px;
     right: unset;
+  }
+  .document-container {
+    max-width: 100%;
+  }
+  .upload-visa-card__header {
+    margin-top: 0;
+  }
+  .upload-visa-card__wrapper {
+    padding: 0 0 45px;
+  }
+  .note_upload-visa-card_padding {
+    margin-bottom: 45px;
+  }
+  .upload-document-button-container_size_small {
+    margin: 0 auto;
+  }
+  .driving-license__container_sm {
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .document-type {
+    max-width: 100%;
   }
 }
 
@@ -1006,7 +1066,7 @@ img {
     right: 10px;
     width: 20px;
     height: 20px;
-    background-size: 50%;
+    background-size: cover;
   }
   .document-type:last-child .document-type__name {
     max-width: 142px;
@@ -1019,12 +1079,6 @@ img {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     row-gap: 30px;
-  }
-  .upload-document__header_mt {
-    margin-top: 0;
-  }
-  .upload-document__front-side {
-    margin-bottom: 0;
   }
   .note_warning_red-bg {
     position: unset;
