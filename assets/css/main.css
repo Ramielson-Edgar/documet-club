@@ -332,6 +332,7 @@ img {
 .upload-document__description {
   color: #969696;
   font-size: 13px;
+  text-transform: capitalize;
 }
 
 .upload-document_color_dark {
@@ -563,7 +564,7 @@ img {
 }
 
 .note_size_xs {
-  width: 190px;
+  width: 200px;
 }
 
 .color-copy__title-wrapper {
