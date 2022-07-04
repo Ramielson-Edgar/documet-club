@@ -59,6 +59,15 @@ img {
   display: flex;
 }
 
+.d-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.d-none {
+  display: none;
+}
+
 .red-accent-color {
   color: #ff9393;
 }
@@ -255,6 +264,7 @@ img {
 
 .upload-document__back-side_center {
   border-bottom: none;
+  max-height: 362px;
 }
 
 .upload-document-button-container {
@@ -414,12 +424,17 @@ img {
   margin-bottom: 45px;
 }
 
+.container-checkbox,
 .document-tips__list {
   padding: 45px 0;
 }
 
 .note_wrapper-list-margin {
   margin-top: 45px;
+}
+
+.note {
+  pointer-events: none;
 }
 
 .document-tips__list-paper,
@@ -452,33 +467,30 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 200px;
+  height: 350px;
 }
 
 .document-tips__img-container__paper {
   max-width: 100%;
-  height: auto;
+  height: 350px;
 }
 
 .document-tips__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 90px 260px;
+      grid-template-rows: 90px 260px;
+  gap: 10px;
+  height: 350px;
+}
+
+.document-tips__header {
+  height: 90px;
 }
 
 .document-tips__img-container {
   height: 260px;
   max-width: 100%;
-}
-
-.document-tips__img-container__paper {
-  height: 200px;
 }
 
 .document-tips__img-container::before {
@@ -558,12 +570,23 @@ img {
   max-width: 500px;
 }
 
+.container-checkbox,
 .document-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(179px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(179px, 1fr));
   gap: 10px;
+}
+
+.document-container__second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .document-type {
@@ -1004,6 +1027,7 @@ img {
   .upload-document__front-side::after {
     bottom: -5px;
   }
+  .container-checkbox,
   .document-container,
   .document-tips__list,
   .upload-document {
