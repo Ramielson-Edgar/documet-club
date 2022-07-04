@@ -56,6 +56,12 @@ function hidePassportBackSection() {
             rowDocumentTips.style.borderLeft = '';
             rowBorderRight.classList.add('border-right');
          }
+
+         if (idCheckbox === 'document-type__passport_2') {
+            document.querySelector('.passport-btn').style.display = 'none';
+         } else {
+            document.querySelector('.passport-btn').style.display = 'flex';
+         }
       }),
    );
 }
