@@ -467,12 +467,12 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 200px;
-  height: 350px;
+  max-height: 360px;
 }
 
 .document-tips__img-container__paper {
   max-width: 100%;
-  height: 350px;
+  max-height: 360px;
 }
 
 .document-tips__item {
@@ -481,7 +481,7 @@ img {
   -ms-grid-rows: 90px 260px;
       grid-template-rows: 90px 260px;
   gap: 10px;
-  height: 350px;
+  max-height: 360px;
 }
 
 .document-tips__header {
