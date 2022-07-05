@@ -28,13 +28,22 @@
                         <span class="panel-name">Colour Copy of identification</span>
                      </a>
                   </h3>
-                  <div class="note note_warning_grid note_warning_red-bg note_size_small">
+
+                  <!-- <div class="note note_warning_grid note_warning_red-bg note_size_small">
                      <span class="note__icon-container">
                         <svg width="5" height="17">
                            <use href="./icons/sprite.svg#icon-warning"></use>
                         </svg>
                      </span>
                      <p class="note__text red-accent-color">Not Verified</p>
+                  </div> -->
+
+                  <div class="note note_pending_grid note__pending note_size_small">
+                     <svg class="icon-pending" width="20" height="20">
+                        <use href="./icons/sprite.svg#pending"></use>
+                     </svg>
+
+                     <p class="note__text">Pending Approval</p>
                   </div>
 
                   <div class="panel__button-container">
@@ -141,6 +150,7 @@
                                              <use href="./icons/sprite.svg#icon-camera"></use>
                                           </svg>
                                        </button>
+
                                        <div class="upload-document__button">
                                           <input class="sr-only" id="upload-file" type="file" />
                                           <label class="btn document-btn" for="upload-file">
@@ -151,6 +161,8 @@
                                                 </svg>
                                              </span>
                                           </label>
+
+                                          <span class="upload-document__notify">Document uploaded</span>
                                        </div>
                                     </div>
                                  </div>
@@ -692,18 +704,26 @@
                            <span class="panel-name">Debit &#47; Credit Card Scans</span>
                         </a>
                      </h3>
-                     <div class="note note_warning_grid note_warning_red-bg note_size_small">
-                        <span class="note__icon-container">
-                           <svg width="5" height="17">
-                              <use href="./icons/sprite.svg#icon-warning"></use>
-                           </svg>
-                        </span>
+
+                     <!-- <div class="note note_warning_grid note_warning_red-bg note_size_small">
+                        <svg width="5" height="17">
+                           <use href="./icons/sprite.svg#icon-warning"></use>
+                        </svg>
                         <p class="note__text red-accent-color">Not Verified</p>
+                     </div> -->
+
+                     <div class="note note_verify_grid note__verify note_size_small">
+                        <svg class="icon-verified" width="20" height="20">
+                           <use href="./icons/sprite.svg#icon-arrow-down"></use>
+                        </svg>
+                        <p class="note__text">Verified</p>
                      </div>
+
                      <div class="panel__button-container">
                         <a class="panel__button-add" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree"></a>
                      </div>
                   </div>
+
                   <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                      <div class="panel-body">
                         <div class="row mb-3">
