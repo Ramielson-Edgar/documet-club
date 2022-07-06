@@ -130,7 +130,7 @@ img {
 }
 
 .main-document {
-   margin-top: 70px;
+   margin-top: 60px;
 }
 
 %base-btn {
@@ -903,6 +903,21 @@ img {
 .document-container__grid {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@media (max-width: 1920px) {
+   .document-container__grid {
+      max-width: 500px;
+      margin: 0 auto;
+   }
+
+   .document-tips__wrapper .document-tips__list-paper {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   }
+
+   .document-tips__list {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   }
 }
 
 @media (max-width: 1198px) {
