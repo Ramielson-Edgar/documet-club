@@ -163,7 +163,7 @@ img {
 .panel__button-container {
   position: absolute;
   top: 24px;
-  right: 80px;
+  right: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1043,9 +1043,6 @@ img {
   }
   .upload-document__wrapper-front-side {
     border-bottom: 1px solid #ededed;
-  }
-  .panel__button-container {
-    right: 70px;
   }
   .documents-content__header,
   .document-menu {

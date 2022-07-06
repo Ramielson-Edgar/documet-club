@@ -204,7 +204,7 @@ img {
 .panel__button-container {
    position: absolute;
    top: 24px;
-   right: 80px;
+   right: 70px;
 
    display: flex;
    gap: 20px;
@@ -1015,9 +1015,9 @@ img {
       border-bottom: 1px solid $line-separator-color;
    }
 
-   .panel__button-container {
-      right: 70px;
-   }
+   // .panel__button-container {
+   //    right: 70px;
+   // }
 
    .documents-content__header,
    .document-menu {
